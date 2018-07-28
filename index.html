@@ -36,6 +36,22 @@
 
         <p>If you want to edit a program, it is pretty much a requirement to have the source code.  Without it, the job becomes <strong>much</strong> harder.  For this reason, companies like Microsoft and Apple go to great lengths to keep their soruce code private.  They don't want you messing around with their bread and butter.  The ethical implications of this are outside the scope of this guide.</p>
       </section>
+
+      <section id="installing">
+        <h1>Installing Haskell</h1>
+
+        <p>So, the first thing we're going to need to do is install Haskell.  I like to use a tool called Stack.  Stack automatically manages the entire Haskell toolchain for you.  It's the most user-friendly way to go.</p>
+
+        <p>If you run a POSIX-compliant operating system (basically, anything other than Windows) you can install it by running the following command in your terminal:</p>
+
+        <pre>curl -sSL https://get.haskellstack.org/ | sh</pre>
+
+        <p>If you run Windows, you'll have to get the installer from <a href="https://haskellstack.org">the Haskell Stack website</a>.</p>
+
+        <p>Once you have done this, it's wise to run the following command in your terminal (kowwn as the Command Prompt in Windows):</p>
+
+        <pre>stack setup</pre>
+      </section>
     </section>
   </body>
 </html>
