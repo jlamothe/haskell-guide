@@ -84,5 +84,21 @@
 
 <p>Finally, we have <code>"Hello, world!"</code>, the actual text we want to display.  Placing it next to the <code>putStrLn</code> function like this <strong>passes</strong> it to the function.  <code>"Hello, world!"</code> is what we call a <strong>string literal</strong>.  We denote a string literal by surrounding it by quotation marks.  This tells the compiler that we're not to treat it like an instruction, but just as a piece of text.</p>
 </section>
+
+<section id="personal">
+<h1>Getting Personal</h1>
+
+<p>Well, now that we've written our first program, maybe we can do something to make it a little more interactive.  Wouldn't it be nice if our program could greet us by name?  Well, it can... if we tell it what our name is.  Try editing <code>hello.hs</code> as follows:</p>
+
+<code class="block">main = do
+  putStrLn "What is your name?"
+  name <- getLine
+  putStrLn $ "Hello, " ++ name ++ "!"
+</code>
+
+<p>The spaces at the beginning of the second through fourth lines are important here.</p>
+
+<p>Now, we should be able to compile and run our code just as we did before.  Give it a try.</p>
+</section>
 </body>
 </html>
