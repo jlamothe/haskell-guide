@@ -74,9 +74,15 @@ main = putStrLn "Hello, world!"
 
 <p>Now, save the file as <code>hello.hs</code>.  All Haskell source code ends in <code>.hs</code> (or <code>.lhs</code>, but we won't discuss this here).</p>
 
-<p>The next thing we'll need to do is compile it.  To do this, open your terminal, and change into the directory that has your file in it, then enter the command <code>stack ghc hello.hs</code>.  If this is your first time doing this, it might take a while, because stack might have to download the compiler (ghc) first.</p>
+<p>The next thing we'll need to do is compile it.  To do this, open your terminal, and change into the directory that has your file in it, then enter the command <code>stack ghc hello.hs</code>.  If this is your first time doing this, it might take a while, because stack might have to download the compiler (ghc) first.  If everything goes well, once this completes you'll now have an executable file called <code>hello</code> (or <code>hello.exe</code> if you're running Windows).  To run it, type <code>./hello</code> (or just <code>hello</code> in Windows).  You should now see the text <samp>Hello, world!</samp> appear on the screen.</p>
 
-<p>If everything goes well, once this completes you'll now have an executable file called <code>hello</code> (or <code>hello.exe</code>) if you're running Windows.  To run it, type <code>./hello</code> (or just <code>hello</code> in Windows).</p>
+<p>This may seem like a small accomplishment, but when I was learning Haskell, it took the tutorial I was reading <strong>nine</strong> chapters to get to this point.  Admittedly, I had a much better understanding of what was going on under the hood, but that's not really necessary at this point.  For now, let's take a closer look at what we're actually telling the computer to do.</p>
+
+<p>The program starts out with <code>main =</code>.  This tells the compiler that we're defining the <code>main</code> function.  You can think of a function as a small program in and of itself.  They're generally pretty simple (or at least they should be) and most programs will be made up of several of them.  Every Haskell program <strong>must</strong> have a <code>main</code> function.  It's the thing that tells the program what to do when it's run.</p>
+
+<p>Next, we have <code>putStrLn</code>.  This is a function that's built into Haskell that takes text and writes it to <strong>standard output</strong>, which in most cases, is going to be the screen.</p>
+
+<p>Finally, we have <code>"Hello, world!"</code>, the actual text we want to display.  Placing it next to the <code>putStrLn</code> function like this <strong>passes</strong> it to the function.  <code>"Hello, world!"</code> is what we call a <strong>string literal</strong>.  We denote a string literal by surrounding it by quotation marks.  This tells the compiler that we're not to treat it like an instruction, but just as a piece of text.</p>
 </section>
 </body>
 </html>
